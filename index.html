@@ -11,7 +11,7 @@
 </head>
 <style>
 body {
-  background-image: url('images/bck.jpg');
+  background-image: url('images/sada.jpg');
 }
 </style>
 <body>
@@ -34,7 +34,7 @@ body {
               <p>
               <strong>Currently seeking PhD opportunites in NLP!</strong>
 			  </p>
-			  <p> In my spare time, I like to <a href="https://sites.google.com/view/figurestudy/work">Sketch</a>,
+			  <p> In my spare time, I like to <a href="https://sites.google.com/view/figurestudy/figure-study-at-louvre">Sketch</a>,
 			  <a href="images/origami.jpg">Origami</a>, 
 			  learn new languages or play Piano and Flute.</p> 
 			  
@@ -59,7 +59,8 @@ body {
               <p>
 Following are my areas of interest where I had some prior publication experience - 
 Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generation,
- Catastrophic forgetting, Curriculum Learning, Resource Scarce Settings and Model Interpretation. Representative papers are highlighted.
+ Catastrophic forgetting, Curriculum Learning, Resource Scarce Settings and Model Interpretation.
+  Representative papers are<a style="padding:0px;background-image: url('images/yellow.jpg')" > highlighted. </a>
               </p>
 			  
             </td>
@@ -77,13 +78,25 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
             <td style="padding:20px;width:75%;vertical-align:middle">
               
                 <strong><h1 style="font-size:1vw">Model Interpretability</h1> </strong>
-              <p>Curriculum Learning, by its nature, involves a lot of hyperparameters and design choices. These include - the curriculum ordering that delegates samples as "easy" or "difficult", the task itself, and the pacing function, which determines the pace by which the model is presented with the data. These complexities make the assessment of CL's effectiveness relatively intractable. Hence, I worked on analyzing CL's effectiveness to understand best when it can be useful. I used attention visualizations to explain that CL works by breaking down a harder problem into multiple easy sub problems. This manuscript is under review at EACL 2021. The in-depth exploration of CL for Sentiment Analysis culminated in my Master's Thesis. I find CL especially essential to NLP's problems, where lately, performance improvements are made based on increasing parameters rather than efficiently training just a single model.
-Given an image of an object and a NeRF of of an object and a NeRF of that object, you can estimate that objthat object, you can estimateof an object and a NeRF of that object, you can estimate that obj that of an object and a NeRF of that object, you can estimate that objobject's pose.
+              <p>
+			  
 			  <br>
-			  While aiming to improve cost-optimal text classification models at Samsung, I found that change in word order had a low impact on CNN performance. This drove me towards model interpretability and led me to research and identify the behavior of CNNs in text classification. My analysis found that convolutional layers are poor at learning sequential information but good at adapting word embedding features towards task-specific representations. This research was published at EMNLP 2019.
-
-			  <br> 
-			  <strong> Relevant Publications: </strong> <br> 
+			  While aiming to improve cost-optimal text classification models at Samsung, 
+			  I found that change in word order had a low impact on CNN performance. 
+			  This drove me towards model interpretability and led me to research and identify the behavior of 
+			  CNNs in text classification[1]. My analysis found that convolutional layers 
+			  are poor at learning sequential information but good at adapting word embedding
+			  features towards task-specific representations.
+			  <br>  <br> 
+			  Since Curriculum Learning by its nature involves a lot of hyperparameters and design choices, such as - the 
+			  curriculum ordering that delegates samples as "easy" or "difficult", 
+			  the task itself, and the pacing function, which determines the pace by which the model
+			  is presented with the data. These complexities make the assessment of CL's effectiveness 
+			  relatively intractable. Hence, I worked on analyzing CL's effectiveness to understand best
+			  when it can be useful. I used attention visualizations to explain that CL works by breaking
+			  down a harder problem into multiple easy sub problems. The in-depth exploration of CL for Sentiment Analysis
+			  culminated in my Master's Thesis[2].<br><br>
+			  <strong> Relevant Publications: </strong> <br> </p>
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')">
 			  [1] <strong><a href="https://www.aclweb.org/anthology/D19-1567/">Sequential Learning of Convolutional Features for Effective Text Classification</a></strong><br>
 			  <a href="https://scholar.google.co.in/citations?user=YRe0ruYAAAAJ&hl=en">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
@@ -112,7 +125,14 @@ Given an image of an object and a NeRF of of an object and a NeRF of that object
             <td style="padding:20px;width:75%;vertical-align:middle">
               
                 <strong><h1 style="font-size:1vw">Robust and Efficient Natural Language Processing</h1> </strong>
-              <p> relies heavily on laborious tagging since users do not add feedback to their conversations explicitly. The conversations users have with Bixby vary in nature across applications and domains such as the Clock app or the Reminder app. In such cases, Domain Adaptation (DA) is an important idea to minimize manual annotations for each of these domains. I proposed DA to utilize annotations of one domain to build feedback models for another. I suggested a gated convolutional architecture for this problem, where the gated mechanism can filter out domain-specific information. 
+              <p> Domain Adaptation (DA) is an important idea to minimize manual annotations 
+			  for each of these domains. I proposed DA to utilize annotations of one domain to build feedback models for
+			  another. I suggested a gated convolutional architecture for this problem, where the gated mechanism
+			  can filter out domain-specific information[1,2]. I find CL especially essential to NLP's problems, where lately, 
+			  performance improvements are made based on 
+			  increasing parameters rather than efficiently training just a single model. I am very interested in
+			  how we can maximise the performance of NLP models, without actually increasing number of parameters or size of the model.
+			  Curriculum learning is a step in that direction[3]
 			  <br>
 			  <br>
 			  <strong> Relevant Publications: </strong> <br> 
@@ -162,24 +182,21 @@ Given an image of an object and a NeRF of of an object and a NeRF of that object
 			  Although the Telugu language is abundantly spoken, NLP tools and 
 			  labeled datasets have been rare making it a low resource language.
 			  Telugu is a morphologically rich language. 
-			  Hence, I improved two pre-existing lexicon-based resources. 
+			  Hence, I improved two pre-existing lexicon-based resources[3,4,6]. 
+			  We also created Hindi resources for Question Answering and to aid <strong> educational applications</strong> divided into grades[5].
+			  <br> <br>
 			  While resource creation for scarce languages is essential, 
-			  hand-curating datasets can be time and labor intensive.<br> <br>Hence, 
-			  I gravitated towards automated resource creation. I worked with 
-			  Prof. Manish Shrivastava's group at IIIT-H, who were working on 
-			  resource-scarce languages as well. We developed a solution to exploit
+			  hand-curating datasets can be time and labor intensive.Hence, 
+			  I gravitated towards automated resource creation. We developed a solution to exploit
 			  the massive emoji-rich <strong> social media </strong>presence of Indian languages to automate
 			  the creation of multilingual sentiment analysis datasets. 
 			  I worked on transforming the extracted emoji dataset into a sentiment analysis
 			  task, which led to creation of labeled datasets
-			  for underrepresented languages - Hindi, Bengali, and Telugu with a combined size of about 270k tweets. 
-			  a linguistically informed rule-based system that relies on semantic roles identified via dependency parsing to convert Hindi sentences into questions. 
-			  <br>
-			  I created HindiRC, a Reading Comprehension dataset for the Hindi language. 
-			  In an attempt to aid in educational applications, I segmented HindiRC into
-			  four different sections based on difficulty. Each corresponding to grades 
-			  from II to V, according to the Hindi educational curriculum followed in Indian elementary schools.
-			  <br> 
+			  for underrepresented languages - Hindi, Bengali, and Telugu with a combined size of about 270k tweets[1]. 
+			  We also made a linguistically informed rule-based system that relies on semantic roles 
+			  identified via dependency parsing to convert Hindi sentences into questions.[2] 
+			  
+			  <br> <br> </p>
 			 <strong> Relevant Publications: </strong><br>
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')">
 			  [1]<strong><a href="https://www.aclweb.org/anthology/C18-1133.pdf"> Twitter corpus of Resource-Scarce Languages for Sentiment Analysis and Multilingual Emoji Prediction</a></strong><br>
