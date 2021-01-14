@@ -1,1 +1,1 @@
-This is the source code to [my website]("https://nvshrao.github.io/") ; clonsed from Jon Barron's public academic website: https://jonbarron.info/. 
+This is the source code to [https://nvshrao.github.io/](my website) ; cloned from Jon Barron's [https://jonbarron.info/](public academic website)
