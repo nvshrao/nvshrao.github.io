@@ -24,12 +24,11 @@ body {
               <p style="text-align:center">
                 <name>Anvesh Rao Vijjini</name>
               </p>
-              <p>Hi! I am currently working as a NLP Researcher helping make <a href="https://www.samsung.com/us/explore/bixby/">Bixby</a>, Samsung‘s AI assistant smarter.
+              <p>Hi! I am currently working as a NLP Researcher helping make <a href="https://www.samsung.com/us/explore/bixby/">Bixby</a>, Samsung‘s AI assistant smarter.  <!  Currently researching in Domain Adaptation, Text Classificaton and Sentiment Analysis.> 
 			  <br>
 			  <br>
-			  Currently researching in Domain Adaptation, Text Classificaton and Sentiment Analysis. 
-			  Previously, I have researched Currciulum Learning in Sentiment Analysis for my Masters under 
-			  the guidance of <a href="https://sites.google.com/site/radhika41">Dr. Radhika Mamidi</a> at LTRC, IIIT-H. 
+			  Previously, I completed my Master's in Computation Linguistics under 
+			  the guidance of <a href="https://sites.google.com/site/radhika41">Dr. Radhika Mamidi</a> in Currciulum Learning in Sentiment Analysis at <a href="https://ltrc.iiit.ac.in/">LTRC </a>, <a href="https://www.iiit.ac.in">IIIT-H</a>. 
               </p>
               <p>
               <strong>Currently seeking PhD opportunites in NLP!</strong>
@@ -57,9 +56,9 @@ body {
             <td style="padding:20px;width:100%;vertical-align:middle">
              <heading> <h1 style="font-size:1.3vw">Research</h1></heading>
               <p>
-Following are my areas of interest where I had some prior publication experience - 
-Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generation,
- Catastrophic forgetting, Curriculum Learning, Resource Scarce Settings and Model Interpretation.
+I am broadly intersted in building Natural Language Processing systems which are robust to data variations and efficent in parameters.
+ I consider interpreting models a step in achiveing efifciency. I am also interested in curating resources for under represented languaegs,
+ especially in a mannar which requires least human effort. I have applied these research interests in acrpss NLP applicaitons - Sentiment Analysis, Reading Comprehension, Question Generation and WER Estimation.
   Representative papers are<a style="padding:0px;background-image: url('images/yellow.jpg')" > highlighted. </a>
               </p>
 			  
@@ -71,7 +70,8 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
                 <div class="two" id='inerf_image'>
-                <img src='images/conv_transform.png' width="250">
+				<a href="https://www.aclweb.org/anthology/D19-1567/">
+                <img src='images/conv_transform.png' width="250"></a>
               </div>
             </td>
 			
@@ -81,27 +81,17 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
               <p>
 			  
 
-			  While aiming to improve cost-optimal text classification models at Samsung, 
-			  I found that change in word order had a low impact on CNN performance. 
-			  This drove me towards model interpretability and led me to research and identify the behavior of 
-			  CNNs in text classification[1]. My analysis found that convolutional layers 
-			  are poor at learning sequential information but good at adapting word embedding
-			  features towards task-specific representations.
-			  <br>  <br> 
-			  Since Curriculum Learning by its nature involves a lot of hyperparameters and design choices, such as - the 
-			  curriculum ordering that delegates samples as "easy" or "difficult", 
-			  the task itself, and the pacing function, which determines the pace by which the model
-			  is presented with the data. These complexities make the assessment of CL's effectiveness 
-			  relatively intractable. Hence, I worked on analyzing CL's effectiveness to understand best
+			  I researched and identified the behavior of 
+			  CNNs in text classification[1]. Since Curriculum Learning by its nature involves a lot of hyperparameters and design choices, I worked on analyzing CL's effectiveness to understand best
 			  when it can be useful. I used attention visualizations to explain that CL works by breaking
 			  down a harder problem into multiple easy sub problems. The in-depth exploration of CL for Sentiment Analysis
 			  culminated in my Master's Thesis[2].<br><br>
 			  
 			  <strong> Relevant Publications: </strong> <br> </p>
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')">
-			  [1] <strong><a href="https://www.aclweb.org/anthology/D19-1567/">Sequential Learning of Convolutional Features for Effective Text Classification</a></strong><br>
+			  [1] <strong>Sequential Learning of Convolutional Features for Effective Text Classification</strong><br>
 			  <a href="https://scholar.google.co.in/citations?user=YRe0ruYAAAAJ&hl=en">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
-			  <em>EMNLP-IJCNLP</em> 2020<br>
+			  <em>EMNLP-IJCNLP</em>, 2019 [<a href="https://arxiv.org/abs/1909.00080">arXiv</a>] [<a href="https://www.aclweb.org/anthology/D19-1567/">anthology</a>] [<a href="https://docs.google.com/presentation/d/1degAfk9qUxgdlLHIaKB_ddJ6uvYzsJBwVDvnpoDom-c/edit?usp=sharing">ppt</a>]<br>
 			  </p>
 			  <p>
 			  [2]<strong> Towards Adapting Curriculum Learning for Sentiment Analysis: Challenges and Analyses</strong><br>
@@ -120,75 +110,77 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
                 <div class="two" id='inerf_image'>
-                <img src='images/SDA.jpg' width="200">
+				<a href="https://arxiv.org/pdf/2007.01189">
+                <img src='images/SDA.jpg' width="200"></a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               
                 <strong><h1 style="font-size:1vw">Robust Natural Language Processing</h1> </strong>
-              <p> Domain Adaptation (DA) is an important idea to minimize manual annotations 
+              <p> How can be build NLP models which can will be robust to variations in data such as domain. My previous research focused on Domain Adaptation. Domain Adaptation (DA) is an important idea to minimize manual annotations 
 			  for each of these domains. I proposed DA to utilize annotations of one domain to build feedback models for
 			  another. I suggested a gated convolutional architecture for this problem, where the gated mechanism
-			  can filter out domain-specific information[1,2]
+			  can filter out domain-specific information[1,2]. I am also interested in exploring Robust NLP in building models which are impervious to noise and are unbiased.
 			  <br>
 			  <br>
 			  <strong> Relevant Publications: </strong> <br> 
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')">
-			  [1] <strong><a href="https://arxiv.org/pdf/2007.01189">Sequential Domain Adaptation through Elastic Weight Consolidation for Sentiment Analysis</a></strong><br>
+			  [1] <strong>Sequential Domain Adaptation through Elastic Weight Consolidation for Sentiment Analysis</strong><br>
 			  <a href="https://scholar.google.co.in/citations?user=YRe0ruYAAAAJ&hl=en">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
-			  <em>ICPR</em> 2020<br>
+			  <em>ICPR</em>, 2020 [<a href="https://arxiv.org/pdf/2007.01189">arXiv</a>] [<a href="https://docs.google.com/presentation/d/1ap4tZWJfl3AtsK8x2Ta4AjjwVf2AEtJN8hHcB5Jy5_I/edit?usp=sharing">ppt</a>] [<a href="https://docs.google.com/presentation/d/15slNw_Ftnbqd4VdVadwuhI00hjYxBpSm2Lp1MnLb6q0/edit?usp=sharing">poster</a>]  
 			  </p>
 			  <p>
-			  [2]<strong><a href="https://arxiv.org/pdf/1905.06906"> Gated Convolutional Neural Networks for Domain Adaptation</a></strong><br> 
+			  [2]<strong> Gated Convolutional Neural Networks for Domain Adaptation</a></strong><br> 
               <a href="https://scholar.google.co.in/citations?user=YRe0ruYAAAAJ&hl=en">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
-              <em>NLDB</em>, 2019 
+              <em>NLDB</em>, 2019 [<a href="https://arxiv.org/pdf/1905.06906">arXiv</a>] [<a href="https://link.springer.com/chapter/10.1007/978-3-030-23281-8_10">springer</a>]
 			  </p>
               </p>
             </td>
-          </tr> 
-		  
+          </tr> 		  
 		  
 		  		   <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
                 <div class="two" id='inerf_image'>
+				<a href="https://arxiv.org/pdf/2101.05478.pdf">
                 <img src='images/distance_loss.jpg' width="200">
+				</a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               
                 <strong><h1 style="font-size:1vw">Efficient and Optimal Natural Language Processing</h1> </strong>
-              <p>I find CL especially essential to NLP's problems, where lately, 
+              <p>I am very interested in
+			  how we can maximise the performance of NLP models, without actually increasing number of parameters or size of the model, hence Efficient NLP. I find CL especially essential to NLP's problems, where lately, 
 			  performance improvements are made based on 
-			  increasing parameters rather than efficiently training just a single model. I am very interested in
-			  how we can maximise the performance of NLP models, without actually increasing number of parameters or size of the model.
-			  Curriculum learning is a step in that direction[3]
+			  increasing parameters rather than efficiently training just a single model. 
+			  Curriculum learning is a step in that direction[3]. But there could be many ways we can try acheving this. Phrasing WER predicition as a ordinal classificaiton loss[1], or proposing a decay fucntions.
 			  <br>
 			  <br>
 			  <strong> Relevant Publications: </strong> <br> 
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')">
 			  [1] <strong>WER-BERT: Automatic WER Estimation with BERT in a Balanced Ordinal Classification Paradigm</strong><br>
 			  <strong>Anvesh Rao Vijjini*</strong>, <a href="https://www.linkedin.com/in/akshay-krishna-sheshadri-23b405181?originalSubdomain=in"> Akshay Krishna Sheshadri* </a>, Sukhdeep Kharbanda<br>
-			  <em>EACL</em> 2021<br>
+			  <em>EACL</em>, 2021 [<a href="https://arxiv.org/pdf/2101.05478.pdf">arXiv</a>] 
 			  </p>
 			  <p>
 			  <p>
-			  [2]<strong><a href="https://rdcu.be/cbYDW"> A SentiWordNet Strategy for Curriculum Learning in Sentiment Analysis</a></strong><br> 
+			  [2]<strong> A SentiWordNet Strategy for Curriculum Learning in Sentiment Analysis</strong><br> 
               <strong>Anvesh Rao Vijjini*</strong>, 
 			  <a href="https://kaveri.ml/index.html">Kaveri Anuranjana*</a>,
 			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a>
 			  <br>
-              <em>NLDB</em>, 2020  
+              <em>NLDB</em>, 2020 [<a href="https://arxiv.org/abs/2005.04749">arXiv</a>] [<a href="https://link.springer.com/chapter/10.1007/978-3-030-51310-8_16">springer</a>] [<a href="https://docs.google.com/presentation/d/1hUT8YiP8sJDZW9zt7PsqYmc06Sf-TjhiNSmmMlKVwc0/edit?usp=sharing">ppt</a>] [<a href="https://github.com/nvshrao/SentiWordNet-Curriculum">code</a>]
 			  </p>
 			  <p>
-			  [3]<strong><a href="https://rdcu.be/cbYFG"> A Position Aware Decay Weighted Network For Aspect Based Sentiment Analysis</a></strong><br> 
+			  [3]<strong> A Position Aware Decay Weighted Network For Aspect Based Sentiment Analysis</strong><br> 
               <a href="https://scholar.google.co.in/citations?user=YRe0ruYAAAAJ&hl=en">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
-              <em>NLDB</em>, 2020  
-			  </p>
+              <em>NLDB</em>, 2020 [<a href="https://arxiv.org/abs/2005.01027">arXiv</a>] [<a href="https://link.springer.com/chapter/10.1007/978-3-030-51310-8_14">springer</a>] [<a href="https://docs.google.com/presentation/d/1YCvRu3ehsVVU1cyqteYzqmwKYtB1-LnhIV0gcuKEkyU/edit?usp=sharing">ppt</a>]  
+			  </p> 
 			  			  <p>
-			  [4]<strong><a href="https://arxiv.org/pdf/1905.01338"> Effectiveness of Self Normalizing Neural Networks for Text Classification</a></strong><br> 
+			  [4]<strong> Effectiveness of Self Normalizing Neural Networks for Text Classification</a></strong><br> 
               <a href="https://scholar.google.co.in/citations?user=YRe0ruYAAAAJ&hl=en">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
-              <em>CICLing</em>, 2019
+              <em>CICLing</em>, 2019 [<a href="https://arxiv.org/pdf/1905.01338">arXiv</a>] [<a href="https://docs.google.com/presentation/d/1UH8mm2xy1Z63x7k6gcFeCzqkPWQWbxPSpUJOerSGoLA/edit?usp=sharing">ppt</a>] [<a href="https://docs.google.com/presentation/d/1ER65PBiO4EVUYgFnLxYIwt-uqjti6IOCiK13bSbPKkw/edit?usp=sharing">poster</a>]  
 			  </p>
               </p>
             </td>
@@ -197,7 +189,9 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
                 <div class="two" id='inerf_image'>
+				<a href="https://www.aclweb.org/anthology/C18-1133.pdf">
                 <img src='images/colingdata1.png' width="250">
+				</a>
               </div>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -207,72 +201,68 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
 			  and this reliance has adverse effects in resource-scarce settings. 
 			  Although the Telugu language is abundantly spoken, NLP tools and 
 			  labeled datasets have been rare making it a low resource language.
-			  Telugu is a morphologically rich language. 
-			  Hence, I improved two pre-existing lexicon-based resources[3,4,6]. 
+			  I improved two pre-existing lexicon-based resources[3,4,6]. 
 			  We also created Hindi resources for Question Answering and to aid <strong> educational applications</strong> divided into grades[5].
 			  <br> <br>
 			  While resource creation for scarce languages is essential, 
 			  hand-curating datasets can be time and labor intensive.Hence, 
 			  I gravitated towards automated resource creation. We developed a solution to exploit
 			  the massive emoji-rich <strong> social media </strong>presence of Indian languages to automate
-			  the creation of multilingual sentiment analysis datasets. 
-			  I worked on transforming the extracted emoji dataset into a sentiment analysis
-			  task, which led to creation of labeled datasets
-			  for underrepresented languages - Hindi, Bengali, and Telugu with a combined size of about 270k tweets[1]. 
+			  the creation of multilingual sentiment analysis datasets[1]. 
 			  We also made a linguistically informed rule-based system that relies on semantic roles 
 			  identified via dependency parsing to convert Hindi sentences into questions.[2] 
 			  
 			  <br> <br> </p>
 			 <strong> Relevant Publications: </strong><br>
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')">
-			  [1]<strong><a href="https://www.aclweb.org/anthology/C18-1133.pdf"> Twitter corpus of Resource-Scarce Languages for Sentiment Analysis and Multilingual Emoji Prediction</a></strong><br>
+			  [1]<strong> Twitter corpus of Resource-Scarce Languages for Sentiment Analysis and Multilingual Emoji Prediction</strong><br>
 			  <a href="https://nurendra.me/">Nurendra Choudary</a>,
 			  <a href="https://scholar.google.co.in/citations?user=IFu-v7wAAAAJ&hl=en">Rajat Singh,</a>
 			  <strong>Anvesh Rao Vijjini,</strong>
 			  <a href="https://scholar.google.co.in/citations?user=sIvMnGQAAAAJ&hl=en">Manish Shrivastava</a>
 			  <br>
-              <em>COLING</em>, 2018 
+              <em>COLING</em>, 2018 [<a href="https://www.aclweb.org/anthology/C18-1133.pdf">anthology</a>] [<a href="https://github.com/nvshrao/Multilingual-Twitter-Data-COLING"><strong>data</strong></a>]
 			  </p>				
 			  <p>
-			  [2] <strong><a href="https://arxiv.org/pdf/1906.08570">Hindi Question Generation Using Dependency Structures</a></strong><br> 
+			  [2] <strong>Hindi Question Generation Using Dependency Structures</a></strong><br> 
               <strong>Anvesh Rao Vijjini*</strong>, 
 			  <a href="https://kaveri.ml/index.html">Kaveri Anuranjana*</a>,
 			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a>
 			  <br>
-              <em>Humanizing AI (HAI) at IJCAI</em>, 2019
+              <em>Humanizing AI (HAI) at IJCAI</em>, 2019 [<a href="https://arxiv.org/pdf/1906.08570">arXiv</a>] [<a href="https://docs.google.com/presentation/d/18cZDUmcjxEBKntDlXkx8w0R01F7kfOp_Om4ZW-isgKk/edit?usp=sharing">poster</a>]
 			  </p>
 			  
 			  <p>
-			  [3]<strong><a href="https://www.aclweb.org/anthology/W18-3511.pdf"> Towards Automation of Sense-type Identification of Verbs in OntoSenseNet</a></strong><br>
+			  [3]<strong> Towards Automation of Sense-type Identification of Verbs in OntoSenseNet</a></strong><br>
 			  <a href="https://scholar.google.co.in/citations?user=3WrEQFMAAAAJ&hl=en">Sreekavitha Parupalli</a>,
 			  <strong>Anvesh Rao Vijjini,</strong>
 			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a>
 			  <br>
-              <em>SocialNLP at ACL</em>, 2018 
+              <em>SocialNLP at ACL</em>, 2018 [<a href="https://arxiv.org/abs/1807.01677">arXiv</a>] [<a href="https://www.aclweb.org/anthology/W18-3511.pdf">anthology</a>]
 			  </p>
 			  <p>
-			  [4]<strong><a href="https://www.aclweb.org/anthology/W18-4005.pdf"> Towards Enhancing Lexical Resource and Using Sense-annotations of On-toSenseNet for Sentiment Analysis</a></strong><br>
+			  [4]<strong> Towards Enhancing Lexical Resource and Using Sense-annotations of OntoSenseNet for Sentiment Analysis</a></strong><br>
 			  <a href="https://scholar.google.co.in/citations?user=3WrEQFMAAAAJ&hl=en">Sreekavitha Parupalli</a>,
 			  <strong>Anvesh Rao Vijjini,</strong>
 			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a>
 			  <br>
-              <em>SemDeep-3 at COLING</em>, 2018 
+              <em>SemDeep-3 at COLING</em>, 2018 [<a href="https://arxiv.org/abs/1807.03004">arXiv</a>] [<a href="https://www.aclweb.org/anthology/W18-4005.pdf">anthology</a>] [<a href="https://github.com/Shreekavithaa/crowd-sourcing">code</a>]
 			  </p>
 				<p>
-			  [5] <strong><a href="https://www.researchgate.net/publication/342424208_HindiRC_A_Dataset_for_Reading_Comprehension_in_Hindi">HindiRC: A Dataset for Reading Comprehension in Hindi</a></strong><br> 
+			  [5] <strong>HindiRC: A Dataset for Reading Comprehension in Hindi</strong><br> 
               <strong>Anvesh Rao Vijjini*</strong>, 
 			  <a href="https://kaveri.ml/index.html">Kaveri Anuranjana*</a>,
 			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a>
 			  <br>
-              <em>CICLing</em>, 2019
+              <em>CICLing</em>, 2019 [<a href="https://www.researchgate.net/publication/342424208_HindiRC_A_Dataset_for_Reading_Comprehension_in_Hindi">Researchgate</a>] [<a href="https://docs.google.com/presentation/d/1UmPkGv0if1ymo_R0puiaWcnQSJQ8AkOggW1mgehMtz4/edit?usp=sharing">poster</a>] [<a href="https://github.com/erzaliator/HindiRC-Data"><strong>data</strong></a>]  
 			  </p>
 			  <p>
-			  [6]<strong><a href="https://www.aclweb.org/anthology/P18-3014.pdf"> BCSAT: A Benchmark Corpus for Sentiment Analysis in Telugu UsingWord-level Annotations</a></strong><br>
+			  [6]<strong> BCSAT: A Benchmark Corpus for Sentiment Analysis in Telugu UsingWord-level Annotations</a></strong><br>
 			  <a href="https://scholar.google.co.in/citations?user=3WrEQFMAAAAJ&hl=en">Sreekavitha Parupalli</a>,
 			  <strong>Anvesh Rao Vijjini,</strong>
 			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a>
 			  <br>
-              <em>Student Research Workshop (SRW) at ACL</em>, 2018 
+              <em>Student Research Workshop (SRW) at ACL</em>, 2018 [<a href="https://arxiv.org/abs/1807.01679">arXiv</a>] [<a href="https://www.aclweb.org/anthology/P18-3014.pdf">anthology</a>]
 			  </p>			  
               </p>
             </td>
@@ -290,7 +280,7 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg" width="160"></td>
+            <td style="padding:20px;width:25%;vertical-align:middle"><a href="https://www.aclweb.org"><img src="images/cvf.jpg" width="160"></a></td>
             <td width="75%" valign="center">
               <strong>Reviewer</strong>: ACL 2020, EMNLP 2020, NLP+CSS@EMNLP 2020, EACL 2021, ACL 2021
               <br><br>
@@ -299,7 +289,8 @@ Sentiment Analysis, Reading Comprehension, Domain Adaptation, Question Generatio
           </tr>
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/cs188.jpg" alt="cs188" width="160">
+			<a href="https://www.iiit.ac.in">
+              <img src="images/cs188.jpg" alt="cs188" width="160"></a>
             </td>
             <td width="75%" valign="center">
               <strong>Teaching Assistant</strong>, Natural Language Processing, Monsoon 2016, <a href="https://www.iiit.ac.in/people/faculty/m.shrivastava/">Dr. Manish Shrivastava</a>
