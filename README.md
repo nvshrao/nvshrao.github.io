@@ -1,1 +1,1 @@
-This is the source code to my website: https://nvshrao.github.io/ ; clonsed from Jon Barron's public academic website: https://jonbarron.info/. 
+This is the source code for my website: [nvshrao.github.io](https://nvshrao.github.io/) ; cloned from [Jon Barron's academic website](https://jonbarron.info/). Feel free to clone my repo for your personal use.
