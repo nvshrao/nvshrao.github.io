@@ -228,11 +228,10 @@ a:active {
              <heading> Research</heading>
               <p>
 			  
-			  I am broadly interested in building NLP models robust to variations in data such as domain and efficient in parameters. I consider interpreting models a crucial step in achieving this. Only when we find out what ML models learn can we guide them to learn better.
-
- <br><br>
-I am also interested in promoting inclusivity in NLP, especially by curating resources for under-represented languages, preferably in manners that require minimal human intervention.
- <br><br>
+I research building NLP models <a href="#efficient">efficient in parameters</a> and <a href="#robust">robust to variations</a> in data such as domain. I consider <a href="#interpret">interpreting models</a> to be a crucial step in achieving this. Only when we find out what ML models learn, can we guide them to learn better.
+<br><br>
+I am interested in improving representation of resource scarce languages by <a href="#lang">curating resources</a> in manners that require minimal human intervention. <!--  promoting inclusivity in NLP, especially by <a href="#lang">curating resources</a> for under-represented languages, preferably in manners that require minimal human intervention.-->
+<br><br>
 I have applied my research interests across NLP applications such as Sentiment Analysis, Reading Comprehension, Question Generation, and WER Estimation. Representative papers are <strong><a style="padding:0px;background-image: url('images/yellow.jpg')"> highlighted </a></strong>.
 <!-- INCLUDE SEMI SUPERVISED INTEREST AND COMPUTATIONAL SOCIAL SCIENC/ SOCIAL MEDIA AS INTEREST -->
 
@@ -253,9 +252,9 @@ I have applied my research interests across NLP applications such as Sentiment A
 			
             <td style="padding:20px;width:75%;vertical-align:middle">
               
-               <h3>Model Interpretability</h3> 
+               <h3 id="interpret">Model Interpretability</h3> 
               <p>
-			  I consider interpreting Machine Learning models key to identifying potential challenges and improvements while also moving towards  <strong>Responsible AI</strong>. I have researched and identified the behavior of CNNs, especially what convolutional layers are good at learning and what they do not in the context of text classification to propose SCARN - a model effectively utilizing recurrent and convolutional structures [<a href="#interpret_paper_1">1</a>]. I have also researched and identified when <strong>Curriculum Learning </strong>(CL) works, especially in sentiment analysis. Using BERT’s attention visualizations, we give qualitative explanations of how CL works; by breaking down a more challenging problem into multiple easier subproblems [<a href="#interpret_paper_2">2</a>].   <br><br>
+			  Interpreting Machine Learning models is the key to identifying potential challenges and improvements while also moving towards  <strong>Responsible AI</strong>. <br><br>I have researched and identified the behavior of CNNs, especially what convolutional layers are good at learning and what they are not. To address this, I propose SCARN - a model effectively utilizing recurrent and convolutional structures [<a href="#interpret_paper_1">1</a>] for text classification. I have also researched and identified when <strong>Curriculum Learning </strong>(CL) works, especially in sentiment analysis. Using BERT’s attention visualizations, we give qualitative explanations of how CL works; by breaking down a more challenging problem into multiple easier subproblems [<a href="#interpret_paper_2">2</a>].   <br><br>
 			  
 			  <strong> Relevant Publications: </strong> <br> 
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')" id="interpret_paper_1">
@@ -287,8 +286,8 @@ I have applied my research interests across NLP applications such as Sentiment A
             <td style="padding:20px;width:75%;vertical-align:middle">
               
                 <strong></strong>
-				<h3>Robust Natural Language Processing</h3> 
-              <p>My research at Samsung focused on <strong>Domain Adaptation</strong>, which helps build models that scale across domains. We have proposed gated convolutional architectures for this problem. The gated mechanism filters out domain-specific information [<a href="#robust_paper_2">2</a>]. We  further refined this idea to present a Sequential Domain Adaptation framework [<a href="#robust_paper_1">1</a>]. I am also interested in exploring Robust NLP for building models that are impervious to noise and are unbiased.<br>
+				<h3 id="robust">Robust Natural Language Processing</h3> 
+              <p>My research at Samsung focused on <strong>Domain Adaptation</strong>, which helps build models that scale across domains. I have proposed gated convolutional architectures for this problem. The gated mechanism filters out domain-specific information [<a href="#robust_paper_2">2</a>]. I  further refined this idea to present a Sequential Domain Adaptation framework [<a href="#robust_paper_1">1</a>]. I am also interested in exploring Robust NLP for building models that are impervious to noise and are unbiased.<br>
 			  <br>
 			  <strong> Relevant Publications: </strong> <br> 
 			  <p style="padding:0px;background-image: url('images/yellow.jpg')" id="robust_paper_1">
@@ -316,9 +315,11 @@ I have applied my research interests across NLP applications such as Sentiment A
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               
-                <strong><h3>Efficient Natural Language Processing</h3> </strong>
+                <strong><h3 id="efficient">Efficient Natural Language Processing</h3> </strong>
               <p> Lately, performance improvements in NLP tasks are being made based on 
-			 <strong> <a href="https://the-data-set.org/why-the-new-ai-nlp-language-model-gpt-3-is-a-big-deal/">increasing parameters</a></strong> rather than efficiently training a single model. I am interested in achieving efficiency in NLP models where performance improvements can be made while maintaining model sizes hence moving towards <strong>Green NLP</strong>. <br><br><strong>Curriculum Learning</strong> proposes one way of achieving this by introducing an ordering to the training but using the same model [<a href="#efficient_paper_2">2</a>]. Within CNN for text classification, we have introduced self normalizing layers to achieve better generalization while reducing parameters [<a href="#efficient_paper_4">4</a>]. I have proposed parameter less decay based weighting layers to weight words closer to aspect terms more than farther ones for <strong>Aspect-Based Sentiment Analysis</strong> [<a href="#efficient_paper_3">3</a>]. More recently, I proposed WER-BERT for <strong>Automatic WER Estimation</strong>, which uses a custom loss function for exploiting the ordinal nature of the WER classification task [<a href="#efficient_paper_1">1</a>]. I am also interested in distilling models and semi-supervised learning.
+			 <strong> <a href="https://the-data-set.org/why-the-new-ai-nlp-language-model-gpt-3-is-a-big-deal/">increasing parameters</a></strong> rather than efficiently training a single model. I am interested in achieving efficiency in NLP models where performance improvements can be made while maintaining model sizes hence moving towards <strong>Green NLP</strong>. 
+			 
+			 <br><br>Efficiency can be achieved in multiple ways, my work explores some of these methods. <strong>Curriculum Learning</strong> introduces an ordering to the training while using the same model [<a href="#efficient_paper_2">2</a>]. Within CNN for text classification, we have introduced self normalizing layers to achieve better generalization while reducing parameters [<a href="#efficient_paper_4">4</a>]. I have proposed parameter less decay based weighting layers to weight words closer to aspect terms more than farther ones for <strong>Aspect-Based Sentiment Analysis</strong> [<a href="#efficient_paper_3">3</a>]. More recently, I proposed WER-BERT for <strong>Automatic WER Estimation</strong>, which uses a custom loss function for exploiting the ordinal nature of the WER classification task [<a href="#efficient_paper_1">1</a>]. I am also interested in distilling models and semi-supervised learning.
 
 			  <br>
 			  <br>
@@ -360,7 +361,7 @@ I have applied my research interests across NLP applications such as Sentiment A
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               
-                <strong><h3>Resources for under-represented languages</h3> </strong>
+                <strong><h3 id="lang">Resources for Under-Represented Languages</h3> </strong>
               <p>Modern machine learning algorithms rely heavily on data, and this reliance has adverse effects in <strong>Resource-Scarce Settings</strong>. I improved two pre-existing lexicon-based resources in Telugu [<a href="#lang_paper_3">3</a>,<a href="#lang_paper_4">4</a>,<a href="#lang_paper_6">6</a>]. We also created Hindi resources for <strong>Question Answering</strong>. To aid <strong>Educational Applications</strong>, we divided the resource into academic grades based on difficulty [<a href="#lang_paper_5">5</a>].
 
 			  <br> <br>
