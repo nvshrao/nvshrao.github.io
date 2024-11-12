@@ -185,16 +185,16 @@ a:active {
               <p style="text-align:center">
                 <name>Anvesh Rao Vijjini</name>
               </p>
-            <p>Hi! I am a fourth year PhD student advised by <a href="https://sites.google.com/site/snigdhac/">Prof. Snigdha Chaturvedi</a> at <a href="https://www.unc.edu/">UNC-Chapel Hill</a>. Previously I was working as an NLP Researcher, helping make <a href="https://www.samsung.com/us/explore/bixby/">Bixby</a>, <a href="https://research.samsung.com/research-papers">Samsung</a>‘s AI assistant, smarter.
+            <p>Hi! I am a third year PhD student advised by <a href="https://sites.google.com/site/snigdhac/">Prof. Snigdha Chaturvedi</a> at <a href="https://www.unc.edu/">UNC-Chapel Hill</a>. Previously I was working as an NLP Researcher, helping make <a href="https://www.samsung.com/us/explore/bixby/">Bixby</a>, <a href="https://research.samsung.com/research-papers">Samsung</a>‘s AI assistant, smarter.
 			  <br>
 			  <br>
 			  And before that, I was a Computational Linguistics Master's student under the guidance of <a href="https://sites.google.com/site/radhika41">Prof. Radhika Mamidi</a> with my <a href="https://web2py.iiit.ac.in/research_centres/publications/view_publication/mastersthesis/961">thesis</a> on Curriculum Learning in Sentiment Analysis at
 			   <a href="https://ltrc.iiit.ac.in/">Language Technologies Research Center</a>, <a href="https://www.iiit.ac.in">IIIT-H</a>.
 			
               </p>
-			  <p>I like to <a href="https://sites.google.com/view/figurestudy/figure-study-at-louvre">sketch</a>,
-				  <a href="https://www.strava.com/athletes/76642845"> bike around</a>, 
-			  <a href="images/origami.jpg"> explore origami</a>, and
+			  <p>I like to sketch,
+				  <a href="https://www.strava.com/athletes/76642845"> bike</a>, 
+			  <a href="images/origami.jpg">origami</a>, and
 			  <a href="https://www.duolingo.com/profile/nvshrao">learn new languages</a> in my free time.</p> 
 
               <p style="text-align:center">
@@ -250,12 +250,12 @@ a:active {
             <td style="padding:20px;width:100%;vertical-align:middle">
              <heading> Research</heading>
               <p>
-			  
-I am interested in Creative NLP and Language Generation. Language Model's ability to generate narratives with controllable parameters reflects their generation capability. I have also researched building NLP models <a href="#efficient">efficient in parameters</a> and <a href="#robust">robust to variations</a> in data. I consider <a href="#interpret">interpreting models</a> to be a crucial step in achieving this. Only when we find out what ML models learn; can we guide them to learn better. I also contribute to improving resource-scarce languages' representation by <a href="#lang">curating resources</a> in manners that require minimal human intervention. 
+			My research interests include Alignment, Fairness, Safety, Personalization, and Computational Social Science, particularly in the context of Large Language Models. Below is a list of my publications, (loosely) organized by these focus areas.
+<!--I am interested in Creative NLP and Language Generation. Language Model's ability to generate narratives with controllable parameters reflects their generation capability. I have also researched building NLP models <a href="#efficient">efficient in parameters</a> and <a href="#robust">robust to variations</a> in data. I consider <a href="#interpret">interpreting models</a> to be a crucial step in achieving this. Only when we find out what ML models learn; can we guide them to learn better. I also contribute to improving resource-scarce languages' representation by <a href="#lang">curating resources</a> in manners that require minimal human intervention. -->
 <br><br>
  <!--  promoting inclusivity in NLP, especially by <a href="#lang">curating resources</a> for under-represented languages, preferably in manners that require minimal human intervention.-->
 
-I have applied my research interests across NLP applications such as Text Generation, Sentiment Analysis, Reading Comprehension, Question Generation, and WER Estimation. Representative papers are <a style="color:IndianRed;padding:0px;background-image: url('images/yellow.jpg')"> highlighted</a>.
+<!--I have applied my research interests across NLP applications such as Text Generation, Sentiment Analysis, Reading Comprehension, Question Generation, and WER Estimation. Representative papers are <a style="color:IndianRed;padding:0px;background-image: url('images/yellow.jpg')"> highlighted</a>.-->
 <!-- INCLUDE SEMI SUPERVISED INTEREST AND COMPUTATIONAL SOCIAL SCIENC/ SOCIAL MEDIA AS INTEREST -->
               </p>
             </td>
@@ -263,7 +263,51 @@ I have applied my research interests across NLP applications such as Text Genera
         </tbody></table>
         <table style="background-image: url('images/white.jpg');width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 			
+	
+	
+	
 			
+	<tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
+	            <td style="padding:30px;width:33%;vertical-align:top">
+	              <div class="one">
+	                <div class="two" id='inerf_image'>
+					<a href="https://arxiv.org/abs/2406.11107">
+	                <img src='images/intro.pdf' width="238"></a>
+	              </div>
+	            </td>
+			
+	            <td style="padding:20px;width:75%;vertical-align:middle">
+              
+	               <h3 id="interpret">Social Biases and Fairness</h3> 
+	              <p>
+				  I am interested in focusing on the social aspects of AI safety, ensuring that models respect social norms, fairness, and diverse values. I investigated personalization bias in LLMs [<a href="#safety_paper_1">1</a>], revealing how models' safety and utility can vary significantly based on the user's identity, impacting the model's performance in ways that disadvantages certain demographics.<br><br>Additionally, I introduced SocialGaze  [<a href="#safety_paper_2">2</a>], a multi-step prompting framework to align LLMs' judgments with human social norms by focusing on multiple perspectives. SocialGaze improves model alignment with human judgments while exposing model biases related to gender and age.<br><br>
+			  
+				  <strong> Relevant Publications: </strong> <br> 
+					<p  id="safety_paper_1"> <!-- style="padding:0px;background-image: url('images/yellow.jpg')" !-->
+				  [1] <strong>Exploring Safety-Utility Trade-Offs in Personalized Language Models</strong><br>
+				  <strong>Anvesh Rao Vijjini*</strong>, 
+				  <a href="https://www.cs.unc.edu/~somnath/">Somnath Basu Roy Chowdhury*</a>,
+				  <a href="https://sites.google.com/site/snigdhac/">Snigdha Chaturvedi</a> <br>
+				  <em>under review</em> [<a href="https://arxiv.org/abs/2406.11107">arXiv</a>] 
+					
+				  </p>
+				  <p  id="safety_paper_2"> 
+				  [2] <strong>SocialGaze: Improving the Integration of Human Social Norms in Large Language Models</strong><br>
+	              <strong>Anvesh Rao Vijjini*</strong>, 
+				  <a href="https://www.cs.unc.edu/~rrmenon/">Rakesh R. Menon*</a>,
+				  Jiyai Fu,
+				  <a href="https://www.ssriva.com/">Shashank Shrivastava</a>,
+				  <a href="https://sites.google.com/site/snigdhac/">Snigdha Chaturvedi</a> <br>
+				  <em>EMNLP</em>, 2024 (Findings) [<a href="https://arxiv.org/pdf/2410.08698">arXiv</a>] [<a href="https://aclanthology.org/2024.findings-emnlp.962/">anthology</a>] [<a href="https://docs.google.com/presentation/d/1GlkOHT8DlqqmwacIAjIPIQeOivsPoCAuTqw9Yv93-yo/edit?usp=sharing">ppt</a>] [<a href="https://docs.google.com/presentation/d/1cDw26RBr2wN2_BrRWEqDbya5VFlQpcWZy5NnH8m7Lk4/edit?usp=sharing">poster</a>]
+				  [<a href="https://github.com/nvshrao/social_gaze">code-data</a>]
+					
+				  </p>
+
+			  
+	              </p>
+	            </td>
+	          </tr>
+			  		
 <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
@@ -277,10 +321,10 @@ I have applied my research interests across NLP applications such as Text Genera
               
                <h3 id="interpret">Narrative Language Understanding and Generation</h3> 
               <p>
-			  Story Generation has applications in education and interactive learning. I proposed ReLiST [<a href="#narative_paper_1">1</a>] for story generation with control over relationships. ReLiST addresses the most important challenge of this task - writing a story coherently while reflecting the given relationships.<br><br>
+			  Story Generation has applications in education and interactive learning. I proposed ReLiST [<a href="#narative_paper_2">2</a>] for story generation with control over relationships. ReLiST addresses the most important challenge of this task - writing a story coherently while reflecting the given relationships.<br><br>
 			  
 			  <strong> Relevant Publications: </strong> <br> 
-				<p style="padding:0px;background-image: url('images/yellow.jpg')" id="narative_paper_1">
+				<p id="narative_paper_1">
 			  [1] <strong>PARROT, a zero-shot approach for enhancing narrative reading comprehension via parallel reading</strong><br>
 			  <a href="https://zhaochaocs.github.io/">Chao Zhao</a>,
 			  <strong>Anvesh Rao Vijjini</strong>, 
@@ -288,7 +332,7 @@ I have applied my research interests across NLP applications such as Text Genera
 			  <em>EMNLP</em>, 2023 (Findings) [<a href="https://zhaochaocs.github.io/doc/Parrot.pdf">link</a>] 
 					
 			  </p>
-		    	<p style="padding:0px;background-image: url('images/yellow.jpg')" id="narative_paper_2">
+		    	<p id="narative_paper_2">
 			  [2] <strong>Towards Inter-character Relationship-driven Story Generation</strong><br>
               <strong>Anvesh Rao Vijjini</strong>, 
 			  <a href="https://users.soe.ucsc.edu/~hannahbrahman/">Faeze Brahman</a>,
@@ -303,40 +347,6 @@ I have applied my research interests across NLP applications such as Text Genera
           </tr> 
 
 
-			<tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
-            <td style="padding:20px;width:33%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='inerf_image'>
-				<a href="https://www.aclweb.org/anthology/D19-1567/">
-                <img src='images/conv_transform.png' width="250"></a>
-              </div>
-            </td>
-			
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              
-               <h3 id="interpret">Model Interpretability</h3> 
-              <p>
-			  Interpreting Machine Learning models is the key to identifying potential challenges and improvements while also moving towards  <strong>Responsible AI</strong>. <br><br>I have researched and identified the behavior of CNNs, especially what convolutional layers are good at learning and what they are not. To address this, I propose SCARN - a model effectively utilizing recurrent and convolutional structures for text classification [<a href="#interpret_paper_1">1</a>]. I have also researched and identified when <strong>Curriculum Learning </strong>(CL) works, especially in sentiment analysis. Using BERT’s attention visualizations, we give qualitative explanations of how CL works; by breaking down a more challenging problem into multiple easier subproblems [<a href="#interpret_paper_2">2</a>].   <br><br>
-			  
-			  <strong> Relevant Publications: </strong> <br> 
-			  <p style="padding:0px;background-image: url('images/yellow.jpg')" id="interpret_paper_1">
-			  [1] <strong>Sequential Learning of Convolutional Features for Effective Text Classification</strong><br>
-			  <a href="https://www.linkedin.com/in/avinash-madasu-623b1a12a/?originalSubdomain=in">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
-			  <em>EMNLP-IJCNLP</em>, 2019 [<a href="https://arxiv.org/abs/1909.00080">arXiv</a>] [<a href="https://www.aclweb.org/anthology/D19-1567/">anthology</a>] [<a href="https://docs.google.com/presentation/d/1degAfk9qUxgdlLHIaKB_ddJ6uvYzsJBwVDvnpoDom-c/edit?usp=sharing">ppt</a>]<br>
-			  </p>
-			  <p id="interpret_paper_2">
-			  [2] <strong>Analyzing Curriculum Learning for Sentiment Analysis along Task Difficulty, Pacing and Visualization Axes</strong><br>
-              <strong>Anvesh Rao Vijjini*</strong>, 
-			  <a href="https://kaveri.ml/index.html">Kaveri Anuranjana*</a>,
-			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a> <br>
-			  <em>WASSA at EACL</em>, 2021 [<a href="https://arxiv.org/abs/2102.09990">arXiv</a>] [<a href="https://www.aclweb.org/anthology/2021.wassa-1.13.pdf">anthology</a>] [<a href="https://docs.google.com/presentation/d/1AuKLTQ6uMNzUQW5mYQEviQSwrtSj18l_2AJoNnuVaSk/edit?usp=sharing">ppt</a>]
-			  
-			  </p>
-	
-              </p>
-            </td>
-          </tr> 
-
           <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
@@ -349,20 +359,19 @@ I have applied my research interests across NLP applications such as Text Genera
             <td style="padding:20px;width:75%;vertical-align:middle">
               
                 <strong><h3 id="efficient">Efficient Natural Language Processing</h3> </strong>
-              <p> Lately, performance improvements in NLP tasks are being made based on 
-			 <strong> <a href="https://the-data-set.org/why-the-new-ai-nlp-language-model-gpt-3-is-a-big-deal/">increasing parameters</a></strong> rather than efficiently training a single model. I am interested in achieving efficiency in NLP models where performance improvements can be made while maintaining model sizes hence moving towards <strong>Green NLP</strong>. 
-			 
-			 <br><br>Efficiency can be achieved in multiple ways; my work explores some of these methods. <strong>Curriculum Learning</strong> introduces an ordering to the training while using the same model [<a href="#efficient_paper_2">2</a>]. We have introduced self-normalizing layers within CNN for text classification to achieve better generalization while reducing parameters [<a href="#efficient_paper_4">4</a>]. I have proposed parameter less decay based weighting layers to weight words closer to aspect terms more than farther ones for <strong>Aspect-Based Sentiment Analysis</strong> [<a href="#efficient_paper_3">3</a>]. More recently, I proposed WER-BERT for <strong>Automatic WER Estimation</strong>, which uses a custom loss function for exploiting the ordinal nature of the WER classification task [<a href="#efficient_paper_1">1</a>]. I am also interested in distilling models and semi-supervised learning.
+           <!--   <p> Lately, performance improvements in NLP tasks are being made based on 
+			 <strong> <a href="https://the-data-set.org/why-the-new-ai-nlp-language-model-gpt-3-is-a-big-deal/">increasing parameters</a></strong> rather than efficiently training a single model. I am interested in achieving efficiency in NLP models where performance improvements can be made while maintaining model sizes hence moving towards <strong>Green NLP</strong>. -->
+			Efficiency can be achieved in multiple ways; my work explores some of these methods. <strong>Curriculum Learning</strong> introduces an ordering to the training while using the same model [<a href="#efficient_paper_2">2</a>]. We have introduced self-normalizing layers within CNN for text classification to achieve better generalization while reducing parameters [<a href="#efficient_paper_4">4</a>]. I have proposed parameter less decay based weighting layers to weight words closer to aspect terms more than farther ones for <strong>Aspect-Based Sentiment Analysis</strong> [<a href="#efficient_paper_3">3</a>]. More recently, I proposed WER-BERT for <strong>Automatic WER Estimation</strong>, which uses a custom loss function for exploiting the ordinal nature of the WER classification task [<a href="#efficient_paper_1">1</a>]. I am also interested in distilling models and semi-supervised learning.
 			<!-- introducing self normalizing layers instead of batch normalization saves parameters at the same time achieving better generalization-->
 			  <br>
 			  <br>
 			  <strong> Relevant Publications: </strong> <br> 
-			  <p style="padding:0px;background-image: url('images/yellow.jpg')"  id="efficient_paper_1">
+			  <p  id="efficient_paper_1">
 			  [1] <strong>Curricular Next Conversation Prediction Pretraining for Transcript Segmentation</strong><br>
 			  <strong>Anvesh Rao Vijjini</strong>, Hanieh Deilamsalehy, Franck Dernoncourt, <a href="https://sites.google.com/site/snigdhac/">Snigdha Chaturvedi</a> <br>
 			  <em>EACL</em>, 2023 (Findings) [<a href="https://aclanthology.org/2023.findings-eacl.197.pdf">anthology</a>]
 			  </p>
-			  <p style="padding:0px;background-image: url('images/yellow.jpg')"  id="efficient_paper_1">
+			  <p  id="efficient_paper_1">
 			  [2] <strong>WER-BERT: Automatic WER Estimation with BERT in a Balanced Ordinal Classification Paradigm</strong><br>
 			  <strong>Anvesh Rao Vijjini*</strong>, <a href="https://www.linkedin.com/in/akshay-krishna-sheshadri-23b405181?originalSubdomain=in"> Akshay Krishna Sheshadri*</a>, Sukhdeep Kharbanda<br>
 			  <em>EACL</em>, 2021 [<a href="https://arxiv.org/pdf/2101.05478.pdf">arXiv</a>] [<a href="https://www.aclweb.org/anthology/2021.eacl-main.320.pdf">anthology</a>] [<a href="https://docs.google.com/presentation/d/190iejC07-DhWmC28_jCwBNj60NAHETJQ_QHi5q_T0cA/edit?usp=sharing">ppt</a>] [<a href="https://docs.google.com/presentation/d/1gyJftf29fd6IKnDw2I-N37wduIWgCglgaQSs0ehW4oU/edit?usp=sharing">poster</a>] 
@@ -388,7 +397,41 @@ I have applied my research interests across NLP applications such as Text Genera
               </p>
             </td>
           </tr>
-		  
+
+
+			<tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
+            <td style="padding:20px;width:33%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='inerf_image'>
+				<a href="https://www.aclweb.org/anthology/D19-1567/">
+                <img src='images/conv_transform.png' width="250"></a>
+              </div>
+            </td>
+			
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              
+               <h3 id="interpret">Model Interpretability</h3> 
+              <p>
+			  Interpreting Machine Learning models is the key to identifying potential challenges and improvements while also moving towards  <strong>Responsible AI</strong>. <br><br>I have researched and identified the behavior of CNNs, especially what convolutional layers are good at learning and what they are not. To address this, I propose SCARN - a model effectively utilizing recurrent and convolutional structures for text classification [<a href="#interpret_paper_1">1</a>]. I have also researched and identified when <strong>Curriculum Learning </strong>(CL) works, especially in sentiment analysis. Using BERT’s attention visualizations, we give qualitative explanations of how CL works; by breaking down a more challenging problem into multiple easier subproblems [<a href="#interpret_paper_2">2</a>].   <br><br>
+			  
+			  <strong> Relevant Publications: </strong> <br> 
+			  <p id="interpret_paper_1">
+			  [1] <strong>Sequential Learning of Convolutional Features for Effective Text Classification</strong><br>
+			  <a href="https://www.linkedin.com/in/avinash-madasu-623b1a12a/?originalSubdomain=in">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
+			  <em>EMNLP-IJCNLP</em>, 2019 [<a href="https://arxiv.org/abs/1909.00080">arXiv</a>] [<a href="https://www.aclweb.org/anthology/D19-1567/">anthology</a>] [<a href="https://docs.google.com/presentation/d/1degAfk9qUxgdlLHIaKB_ddJ6uvYzsJBwVDvnpoDom-c/edit?usp=sharing">ppt</a>]<br>
+			  </p>
+			  <p id="interpret_paper_2">
+			  [2] <strong>Analyzing Curriculum Learning for Sentiment Analysis along Task Difficulty, Pacing and Visualization Axes</strong><br>
+              <strong>Anvesh Rao Vijjini*</strong>, 
+			  <a href="https://kaveri.ml/index.html">Kaveri Anuranjana*</a>,
+			  <a href="https://sites.google.com/site/radhika41">Radhika Mamidi</a> <br>
+			  <em>WASSA at EACL</em>, 2021 [<a href="https://arxiv.org/abs/2102.09990">arXiv</a>] [<a href="https://www.aclweb.org/anthology/2021.wassa-1.13.pdf">anthology</a>] [<a href="https://docs.google.com/presentation/d/1AuKLTQ6uMNzUQW5mYQEviQSwrtSj18l_2AJoNnuVaSk/edit?usp=sharing">ppt</a>]
+			  
+			  </p>
+	
+              </p>
+            </td>
+          </tr>
 		   <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
             <td style="padding:20px;width:33%;vertical-align:top">
               <div class="one">
@@ -404,7 +447,7 @@ I have applied my research interests across NLP applications such as Text Genera
               <p>My research at Samsung focused on <strong>Domain Adaptation</strong>, which helps build models that scale across domains. I have proposed gated convolutional architectures for this problem. The gated mechanism filters out domain-specific information [<a href="#robust_paper_2">2</a>]. I  further refined this idea to present a Sequential Domain Adaptation framework [<a href="#robust_paper_1">1</a>]. I am also interested in exploring Robust NLP for building models that are impervious to noise and are unbiased.<br>
 			  <br>
 			  <strong> Relevant Publications: </strong> <br> 
-			  <p style="padding:0px;background-image: url('images/yellow.jpg')" id="robust_paper_1">
+			  <p id="robust_paper_1">
 			  [1] <strong>Sequential Domain Adaptation through Elastic Weight Consolidation for Sentiment Analysis</strong><br>
 			  <a href="https://www.linkedin.com/in/avinash-madasu-623b1a12a/?originalSubdomain=in">Avinash Madasu</a>, <strong>Anvesh Rao Vijjini</strong><br>
 			  <em>ICPR</em>, 2020 [<a href="https://arxiv.org/pdf/2007.01189">arXiv</a>] [<a href="https://docs.google.com/presentation/d/1ap4tZWJfl3AtsK8x2Ta4AjjwVf2AEtJN8hHcB5Jy5_I/edit?usp=sharing">ppt</a>] [<a href="https://docs.google.com/presentation/d/15slNw_Ftnbqd4VdVadwuhI00hjYxBpSm2Lp1MnLb6q0/edit?usp=sharing">poster</a>]  
@@ -439,7 +482,7 @@ While resource creation for scarce languages is essential, hand-curating dataset
 			  
 			  <br> <br>
 			 <strong> Relevant Publications: </strong><br>
-			  <p style="padding:0px;background-image: url('images/yellow.jpg')" id="lang_paper_1">
+			  <p  id="lang_paper_1">
 			  [1]<strong> Twitter corpus of Resource-Scarce Languages for Sentiment Analysis and Multilingual Emoji Prediction</strong><br>
 			  <a href="https://nurendra.me/">Nurendra Choudary</a>,
 			  <a href="https://scholar.google.co.in/citations?user=IFu-v7wAAAAJ&hl=en">Rajat Singh,</a>
